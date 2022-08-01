@@ -5,9 +5,11 @@ import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
-import arrowRight from '../../assets/img/arrow-right.svg'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
+
+//IMPORTING SVG'S
+import arrowRight from '../../assets/img/arrow-right.svg'
 import strategy_svg from '../../assets/img/strategy.svg'
 import design_svg from '../../assets/img/vector-art-and-design-svgrepo-com.svg'
 import development_svg from '../../assets/img/code-coding-development-programming-web-webpage-svgrepo-com.svg'

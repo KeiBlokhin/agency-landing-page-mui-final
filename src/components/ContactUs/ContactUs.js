@@ -4,6 +4,8 @@ import Typography from '@mui/material/Typography'
 import TextField from '@mui/material/TextField'
 import Button from '../Button'
 import TextareaAutosize from '@mui/material/TextareaAutosize'
+
+//IMPORTING SVG'S AND IMAGES
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
