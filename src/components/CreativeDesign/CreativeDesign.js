@@ -23,8 +23,8 @@ const CreativeDesign = () => {
           professional deign agency to provide solutions
         </Typography>
         <Stack sx={styles.stack}>
-          {data.map((item) => {
-            return <Card title={item.title} />
+          {data.map((item, index) => {
+            return <Card title={item.title} key={index} />
           })}
         </Stack>
       </Box>

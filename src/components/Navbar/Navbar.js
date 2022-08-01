@@ -33,8 +33,8 @@ const Navbar = () => {
     <Box
       sx={{ flexGrow: 1, display: { lg: 'flex' }, justifyContent: 'flex-end' }}
     >
-      {pages.map((page) => (
-        <MuiButton key={page} sx={styles.btnLink}>
+      {pages.map((page, index) => (
+        <MuiButton key={index} sx={styles.btnLink}>
           {page.title}{' '}
           {page.arrow && (
             <img src={arrow} style={{ marginLeft: '5px' }} alt='arrow' />

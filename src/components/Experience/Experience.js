@@ -32,9 +32,9 @@ const Experience = () => {
           professional design agency to provide solutions
         </Typography>
         <Box sx={styles.links}>
-          {links.map((link) => {
+          {links.map((link, index) => {
             return (
-              <Link key={link} sx={styles.link}>
+              <Link key={index} sx={styles.link}>
                 {link}
               </Link>
             )

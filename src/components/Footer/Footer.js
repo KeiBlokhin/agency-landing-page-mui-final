@@ -60,8 +60,12 @@ const Footer = () => {
               services
             </Typography>
             <List>
-              {services.map((item) => {
-                return <ListItem sx={styles.itemList}>{item}</ListItem>
+              {services.map((item, index) => {
+                return (
+                  <ListItem sx={styles.itemList} key={index}>
+                    {item}
+                  </ListItem>
+                )
               })}
             </List>
           </Box>
@@ -72,8 +76,12 @@ const Footer = () => {
               links
             </Typography>
             <List>
-              {links.map((item) => {
-                return <ListItem sx={styles.itemList}>{item}</ListItem>
+              {links.map((item, index) => {
+                return (
+                  <ListItem sx={styles.itemList} key={index}>
+                    {item}
+                  </ListItem>
+                )
               })}
             </List>
           </Box>
@@ -84,9 +92,9 @@ const Footer = () => {
               follow
             </Typography>
             <List>
-              {follow.map((item) => {
+              {follow.map((item, index) => {
                 return (
-                  <ListItem sx={styles.itemList}>
+                  <ListItem sx={styles.itemList} key={index}>
                     {typeof item.img === 'string' ? (
                       <Box component='img' src={item.img} />
                     ) : (
