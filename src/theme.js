@@ -25,7 +25,14 @@ const theme = createTheme({
         lineHeight: '78px',
       },
     },
-
+    h3: {
+      fontFamily: 'Montserrat,sans-serif',
+      fontWeight: 700,
+      fontSize: '24px',
+      lineHeight: '29px',
+      textTransform: 'capitalize',
+      color: '#000000',
+    },
     body1: {
       fontFamily: 'Montserrat,sans-serif',
       fontWeight: 400,
@@ -36,6 +43,31 @@ const theme = createTheme({
         fontSize: '24px',
         lineHeight: '29px',
         fontWeight: 500,
+      },
+    },
+    someStyle: {
+      fontFamily: 'Montserrat,sans-serif',
+      textTransform: 'capitalize',
+    },
+  },
+  components: {
+    // Name of the component
+    MuiOutlinedInput: {
+      styleOverrides: {
+        notchedOutline: { border: '0.5px solid #777FEB' },
+        root: {
+          borderRadius: '8px',
+          color: '#000',
+          fontSize: '16px',
+          lineHeight: '20px',
+          fontWeight: 500,
+          '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+            border: '2px solid #777FEB',
+          },
+          '&:hover .MuiOutlinedInput-notchedOutline': {
+            border: '2px solid #777FEB',
+          },
+        },
       },
     },
   },

@@ -1,6 +1,8 @@
 import React from 'react'
 import MuiButton from '@mui/material/Button'
 import Box from '@mui/material/Box'
+
+//IMPORTING SVG'S
 import arrow from '../../assets/img/chevron-down.svg'
 
 const pages = [
@@ -34,7 +36,9 @@ const Navbar = () => {
       {pages.map((page) => (
         <MuiButton key={page} sx={styles.btnLink}>
           {page.title}{' '}
-          {page.arrow && <img src={arrow} style={{ marginLeft: '5px' }} />}
+          {page.arrow && (
+            <img src={arrow} style={{ marginLeft: '5px' }} alt='arrow' />
+          )}
         </MuiButton>
       ))}
     </Box>
